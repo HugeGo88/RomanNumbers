@@ -17,7 +17,7 @@ namespace RomanNumbers.IntegrationTest
         {
             var result = RomanNumberConverter.ConvertBackwords(romanNumber);
 
-            Assert.That(integer, Is.EqualTo(result));
+            Assert.That(result, Is.EqualTo(integer));
         }
     }
 }

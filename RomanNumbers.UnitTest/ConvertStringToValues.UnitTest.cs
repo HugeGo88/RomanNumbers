@@ -18,7 +18,7 @@ namespace RomanNumbers.UnitTest
         {
             var result = RomanNumberConverter.ConvertStringToValues(romanNumber);
 
-            Assert.That(values, Is.EqualTo(result));
+            Assert.That(result, Is.EqualTo(values));
         }
     }
 }
