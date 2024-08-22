@@ -27,16 +27,9 @@ namespace RomanNumbersConverter
         private static int BackwordSum(int[] values)
         {
             int result = 0;
-            bool isFirstRun = true;
-            for (int i = values.Length - 1; i >= 0; i--)
+            result += values[values.Length - 1];
+            for (int i = values.Length - 2; i >= 0; i--)
             {
-                if (isFirstRun)
-                {
-                    result += values[i];
-                    isFirstRun = false;
-                    continue;
-                }
-
                 if (values[i] >= values[i + 1])
                 {
                     result += values[i];
