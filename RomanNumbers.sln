@@ -3,14 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers", "RomanNumbers\RomanNumbers.csproj", "{255FBC79-615D-4BCA-AFD8-C6A0B34B9A4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RomanNumbers", "RomanNumbers\RomanNumbers.csproj", "{255FBC79-615D-4BCA-AFD8-C6A0B34B9A4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers.IntegrationTest", "RomanNumbers.IntegrationTest\RomanNumbers.IntegrationTest.csproj", "{2C411CDA-4176-4917-9517-5E66B7BD9640}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RomanNumbers.IntegrationTest", "RomanNumbers.IntegrationTest\RomanNumbers.IntegrationTest.csproj", "{2C411CDA-4176-4917-9517-5E66B7BD9640}"
 	ProjectSection(ProjectDependencies) = postProject
 		{255FBC79-615D-4BCA-AFD8-C6A0B34B9A4B} = {255FBC79-615D-4BCA-AFD8-C6A0B34B9A4B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers.UnitTest", "RomanNumbers.UnitTest\RomanNumbers.UnitTest.csproj", "{CDBFE111-AD80-4531-91D4-D3928569BB37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RomanNumbers.UnitTest", "RomanNumbers.UnitTest\RomanNumbers.UnitTest.csproj", "{CDBFE111-AD80-4531-91D4-D3928569BB37}"
+	ProjectSection(ProjectDependencies) = postProject
+		{255FBC79-615D-4BCA-AFD8-C6A0B34B9A4B} = {255FBC79-615D-4BCA-AFD8-C6A0B34B9A4B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers.Benchmark", "RomanNumbers.Benchmark\RomanNumbers.Benchmark.csproj", "{83725178-6023-484F-BDD8-86AA69E79B13}"
 	ProjectSection(ProjectDependencies) = postProject
 		{255FBC79-615D-4BCA-AFD8-C6A0B34B9A4B} = {255FBC79-615D-4BCA-AFD8-C6A0B34B9A4B}
 	EndProjectSection
@@ -33,6 +38,10 @@ Global
 		{CDBFE111-AD80-4531-91D4-D3928569BB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDBFE111-AD80-4531-91D4-D3928569BB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDBFE111-AD80-4531-91D4-D3928569BB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83725178-6023-484F-BDD8-86AA69E79B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83725178-6023-484F-BDD8-86AA69E79B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83725178-6023-484F-BDD8-86AA69E79B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83725178-6023-484F-BDD8-86AA69E79B13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
